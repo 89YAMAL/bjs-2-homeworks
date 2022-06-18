@@ -11,9 +11,9 @@ function parseCount(parse) {
 function validateCount(valid) {
   try {
     return parseCount(valid);
-  } catch (error) {
-    console.log("error");
-  }
+  } catch (Error) {
+      return Error;
+    }
 }
 
 console.log(validateCount("10"))
